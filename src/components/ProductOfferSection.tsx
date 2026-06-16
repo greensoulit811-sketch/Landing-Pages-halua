@@ -44,6 +44,8 @@ const ProductOfferSection = () => {
             src={content.productImage} 
             alt="Product Offer" 
             className="w-full h-auto object-contain"
+            loading="lazy" 
+            decoding="async"
             onError={(e) => { (e.target as HTMLImageElement).src = '/placeholder.svg'; }}
           />
         </div>

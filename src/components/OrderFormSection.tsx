@@ -131,7 +131,7 @@ const OrderFormSection = () => {
                     <div className="flex items-center gap-3">
                       <input type="checkbox" checked readOnly className="w-4 h-4 text-primary rounded border-gray-300" />
                       <div className="w-12 h-12 bg-white border border-gray-200 rounded overflow-hidden flex-shrink-0">
-                        <img src={productThumbnail} alt="Product" className="w-full h-full object-contain" />
+                        <img src={productThumbnail} alt="Product" className="w-full h-full object-contain" loading="lazy" decoding="async" />
                       </div>
                       <div>
                         <p className="font-bold text-sm text-gray-900">{productTitle} × {quantity}</p>
@@ -206,7 +206,7 @@ const OrderFormSection = () => {
                 <div className="flex justify-between items-center mb-6 bg-white p-3 border border-gray-100 shadow-sm rounded-sm">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 border border-gray-200 rounded overflow-hidden flex-shrink-0 bg-white">
-                      <img src={productThumbnail} alt="Product" className="w-full h-full object-contain" />
+                      <img src={productThumbnail} alt="Product" className="w-full h-full object-contain" loading="lazy" decoding="async" />
                     </div>
                     <span className="font-bold text-sm text-gray-800">{productTitle} <span className="font-normal text-gray-500 text-xs ml-1">× {quantity}</span></span>
                   </div>

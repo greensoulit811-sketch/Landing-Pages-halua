@@ -10,18 +10,21 @@ import FacebookPixelProvider from "@/components/FacebookPixelProvider";
 import ProtectedAdminRoute from "@/components/ProtectedAdminRoute";
 import VisitorTracker from "@/components/VisitorTracker";
 import ScrollToTop from "@/components/ScrollToTop";
+import { lazy, Suspense } from 'react';
 import Index from "./pages/Index.tsx";
-import AdminLayout from "./pages/admin/AdminLayout.tsx";
 import AdminLoginPage from "./pages/admin/AdminLoginPage.tsx";
-import Dashboard from "./pages/admin/Dashboard.tsx";
-import CheckoutLeadsManager from "./pages/admin/CheckoutLeadsManager.tsx";
-import MarketingTrackingPage from "./pages/admin/MarketingTrackingPage.tsx";
-import SettingsPage from "./pages/admin/SettingsPage.tsx";
-import HeroManager from "./pages/admin/HeroManager.tsx";
-import ProductOfferManager from "./pages/admin/ProductOfferManager.tsx";
-import BenefitsManager from "./pages/admin/BenefitsManager.tsx";
-import OrderFormManager from "./pages/admin/OrderFormManager.tsx";
-import UsageInstructionsManager from "./pages/admin/UsageInstructionsManager.tsx";
+
+// Lazy load admin components to optimize main bundle size
+const AdminLayout = lazy(() => import("./pages/admin/AdminLayout.tsx"));
+const Dashboard = lazy(() => import("./pages/admin/Dashboard.tsx"));
+const CheckoutLeadsManager = lazy(() => import("./pages/admin/CheckoutLeadsManager.tsx"));
+const MarketingTrackingPage = lazy(() => import("./pages/admin/MarketingTrackingPage.tsx"));
+const SettingsPage = lazy(() => import("./pages/admin/SettingsPage.tsx"));
+const HeroManager = lazy(() => import("./pages/admin/HeroManager.tsx"));
+const ProductOfferManager = lazy(() => import("./pages/admin/ProductOfferManager.tsx"));
+const BenefitsManager = lazy(() => import("./pages/admin/BenefitsManager.tsx"));
+const OrderFormManager = lazy(() => import("./pages/admin/OrderFormManager.tsx"));
+const UsageInstructionsManager = lazy(() => import("./pages/admin/UsageInstructionsManager.tsx"));
 
 
 
@@ -41,21 +44,25 @@ const App = () => (
 
 
               <Route path="/admin/login" element={<AdminLoginPage />} />
-              <Route path="/admin" element={
+              <Route path="/admin/*" element={
                 <ProtectedAdminRoute>
-                  <AdminLayout />
+                  <Suspense fallback={<div className="flex h-screen w-full items-center justify-center"><div className="w-10 h-10 border-4 border-primary border-t-transparent rounded-full animate-spin"></div></div>}>
+                    <Routes>
+                      <Route element={<AdminLayout />}>
+                        <Route index element={<Dashboard />} />
+                        <Route path="checkout-leads" element={<CheckoutLeadsManager />} />
+                        <Route path="marketing" element={<MarketingTrackingPage />} />
+                        <Route path="settings" element={<SettingsPage />} />
+                        <Route path="hero" element={<HeroManager />} />
+                        <Route path="product-offer" element={<ProductOfferManager />} />
+                        <Route path="benefits" element={<BenefitsManager />} />
+                        <Route path="order-form" element={<OrderFormManager />} />
+                        <Route path="usage-instructions" element={<UsageInstructionsManager />} />
+                      </Route>
+                    </Routes>
+                  </Suspense>
                 </ProtectedAdminRoute>
-              }>
-                <Route index element={<Dashboard />} />
-                <Route path="checkout-leads" element={<CheckoutLeadsManager />} />
-                <Route path="marketing" element={<MarketingTrackingPage />} />
-                <Route path="settings" element={<SettingsPage />} />
-                <Route path="hero" element={<HeroManager />} />
-                <Route path="product-offer" element={<ProductOfferManager />} />
-                <Route path="benefits" element={<BenefitsManager />} />
-                <Route path="order-form" element={<OrderFormManager />} />
-                <Route path="usage-instructions" element={<UsageInstructionsManager />} />
-              </Route>
+              } />
             </Routes>
             <VisitorTracker />
             <WhatsAppButton />

@@ -31,12 +31,13 @@ const HeroSection = () => {
         {/* Top Badge Image */}
         {(content.topBadge || defaultHero.topBadge) && (
           <div className="mb-6 w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden bg-white border-4 border-[#e9dc01] shadow-lg flex items-center justify-center">
-            <img 
-              src={content.topBadge || defaultHero.topBadge} 
-              alt="Badge" 
-              className="w-full h-full object-contain"
-              onError={(e) => { (e.target as HTMLImageElement).src = '/placeholder.svg'; }}
-            />
+              <img 
+                src={content.topBadge || defaultHero.topBadge} 
+                alt="Badge" 
+                className="w-full h-full object-contain"
+                fetchPriority="high"
+                onError={(e) => { (e.target as HTMLImageElement).src = '/placeholder.svg'; }}
+              />
           </div>
         )}
 
