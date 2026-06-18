@@ -37,7 +37,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
         </h3>
         
         <div className="text-white font-black text-4xl mb-6 tracking-wider">
-          RM{product.price}
+          BDT{product.price}
         </div>
 
         {/* Specs List */}

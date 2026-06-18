@@ -17,7 +17,7 @@ const Dashboard = () => {
   const totalCount = checkoutLeads.length;
 
   const stats = [
-    { label: 'Total Revenue', value: `RM ${totalRevenue.toFixed(2)}`, icon: DollarSign, change: `${totalCount} orders & appts` },
+    { label: 'Total Revenue', value: `BDT ${totalRevenue.toFixed(2)}`, icon: DollarSign, change: `${totalCount} orders & appts` },
     { label: 'Total Orders & Appts', value: totalCount, icon: ShoppingCart, change: `${pendingOrders} pending` },
     { label: 'Products', value: products.length, icon: Package, change: `${products.filter(p => p.is_active).length} active` },
     { label: 'Completed/Delivered', value: deliveredOrders, icon: Clock, change: `${Math.round((deliveredOrders / (totalCount || 1)) * 100)}% rate` },
@@ -66,7 +66,7 @@ const Dashboard = () => {
     <div>
       <div className="mb-8">
         <h1 className="font-heading text-3xl font-bold uppercase tracking-wider text-foreground">Dashboard</h1>
-        <p className="font-body text-sm text-muted-foreground mt-1">Welcome back to SJ Tinted Shop admin</p>
+        <p className="font-body text-sm text-muted-foreground mt-1">Welcome back to লাভ ফর এভার হালুয়া admin</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
@@ -133,7 +133,7 @@ const Dashboard = () => {
                   <p className="font-body text-xs text-muted-foreground">{order.customer}</p>
                 </div>
                 <div className="text-right">
-                  <p className="font-body text-sm font-bold text-primary">RM {order.total.toFixed(2)}</p>
+                  <p className="font-body text-sm font-bold text-primary">BDT {order.total.toFixed(2)}</p>
                   <span className={`inline-block px-2 py-0.5 text-xs font-body font-semibold rounded-full uppercase ${statusColors[order.status] || ''}`}>{order.status}</span>
                 </div>
               </div>

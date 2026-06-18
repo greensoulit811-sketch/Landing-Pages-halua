@@ -305,7 +305,7 @@ export default function AppointmentPage() {
                             <div className="flex-1">
                               <div className="flex justify-between items-start mb-2">
                                 <h4 className="font-bold text-sm text-black">{svc.title}</h4>
-                                <span className="text-[#00d5b4] font-bold text-sm">RM{svc.price}</span>
+                                <span className="text-[#00d5b4] font-bold text-sm">BDT{svc.price}</span>
                               </div>
                               <p className="text-xs text-gray-500 whitespace-pre-wrap leading-relaxed">{svc.description}</p>
                             </div>
@@ -493,11 +493,11 @@ export default function AppointmentPage() {
                           <h4 className="text-[10px] text-gray-400 font-bold uppercase tracking-widest mb-2">Cost Breakdown</h4>
                           <div className="flex justify-between text-xs mb-2">
                             <span className="text-gray-500">{service?.title}</span>
-                            <span className="font-bold">RM {service?.price}</span>
+                            <span className="font-bold">BDT {service?.price}</span>
                           </div>
                           <div className="flex justify-between text-sm font-black border-t pt-2 mt-2">
                             <span>Total Price</span>
-                            <span>RM {service?.price}</span>
+                            <span>BDT {service?.price}</span>
                           </div>
                         </div>
                       </div>

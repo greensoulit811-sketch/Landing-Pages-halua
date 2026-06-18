@@ -37,7 +37,7 @@ export const printInvoice = (order: any) => {
 </head>
 <body>
   <div class="header">
-    <div class="logo">SJ Tinted Shop</div>
+    <div class="logo">লাভ ফর এভার হালুয়া</div>
     <div class="invoice-title">
       <h2>Invoice</h2>
       <p>${orderNumber} · ${new Date(order.created_at).toLocaleDateString('en-GB')}</p>
@@ -70,18 +70,18 @@ export const printInvoice = (order: any) => {
           <td>${item.size}</td>
           <td>${item.color}</td>
           <td>${item.quantity}</td>
-          <td style="text-align:right">${Number(item.price).toFixed(2)} RM</td>
-          <td style="text-align:right">${(item.price * item.quantity).toFixed(2)} RM</td>
+          <td style="text-align:right">${Number(item.price).toFixed(2)} BDT</td>
+          <td style="text-align:right">${(item.price * item.quantity).toFixed(2)} BDT</td>
         </tr>
       `).join('')}
     </tbody>
   </table>
   <div class="totals">
-    <div class="row"><span>Subtotal:</span><span>${Number(totalAmount).toFixed(2)} RM</span></div>
-    <div class="row total-row"><span>Total:</span><span>${Number(totalAmount).toFixed(2)} RM</span></div>
+    <div class="row"><span>Subtotal:</span><span>${Number(totalAmount).toFixed(2)} BDT</span></div>
+    <div class="row total-row"><span>Total:</span><span>${Number(totalAmount).toFixed(2)} BDT</span></div>
   </div>
   <div class="footer">
-    <p>Thank you for choosing SJ Tinted Shop</p>
+    <p>Thank you for choosing লাভ ফর এভার হালুয়া</p>
   </div>
 </body>
 </html>`;
@@ -124,7 +124,7 @@ export const printCourierSlip = (order: any) => {
 <body>
   <div class="slip">
     <div class="slip-header">
-      <h1>SJ Tinted Shop</h1>
+      <h1>লাভ ফর এভার হালুয়া</h1>
       <p>Courier Delivery Slip</p>
     </div>
     <div class="order-num">${orderNumber}</div>
@@ -141,7 +141,7 @@ export const printCourierSlip = (order: any) => {
       </div>
     </div>
     <div class="cod-badge">Cash on Delivery</div>
-    <div class="total-amount">${Number(totalAmount).toFixed(2)} RM</div>
+    <div class="total-amount">${Number(totalAmount).toFixed(2)} BDT</div>
     <div class="footer">
       <p>Date: ${new Date(order.created_at).toLocaleDateString('en-GB')}</p>
     </div>

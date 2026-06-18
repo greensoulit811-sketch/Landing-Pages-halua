@@ -94,14 +94,14 @@ interface AdminContextType {
 }
 
 const defaultSettings: SiteSettings = {
-  siteName: 'SJ Tinted Shop',
+  siteName: 'লাভ ফর এভার হালুয়া',
   siteDescription: 'Premium laptops and computing accessories in Malaysia',
-  metaTitle: 'SJ Tinted Shop',
+  metaTitle: 'লাভ ফর এভার হালুয়া',
   metaDescription: 'Shop authentic ASUS, HP, Dell, and Lenovo laptops in Malaysia. Fast delivery and COD.',
   whatsappNumber: '+96512345678',
   instagramHandle: 'srkcollectionkw',
   freeShippingThreshold: 30,
-  currency: 'RM',
+  currency: 'BDT',
 };
 
 const defaultOrders: Order[] = [

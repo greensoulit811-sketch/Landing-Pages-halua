@@ -191,7 +191,7 @@ export default function AppointmentsManager() {
                 </div>
                 <div>
                   <h4 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-1">Price</h4>
-                  <p className="text-sm font-medium">RM {viewingAppt.cart_total || '0'}</p>
+                  <p className="text-sm font-medium">BDT {viewingAppt.cart_total || '0'}</p>
                 </div>
                 <div>
                   <h4 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-1">Phone Number</h4>
