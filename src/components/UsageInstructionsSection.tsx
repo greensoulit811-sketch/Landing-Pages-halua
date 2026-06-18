@@ -41,7 +41,7 @@ const UsageInstructionsSection = () => {
   }
 
   return (
-    <section className="w-full flex flex-col items-center pb-10" id="usage-instructions">
+    <section className="w-full flex flex-col items-center pb-1" id="usage-instructions">
       {/* Top Green Box */}
       <div className="bg-[#0A3B22] w-full py-12 px-4 flex flex-col items-center text-center">
         <div className="w-full max-w-6xl mx-auto flex flex-col items-center">
@@ -63,7 +63,7 @@ const UsageInstructionsSection = () => {
       </div>
 
       {/* Bottom White Area */}
-      <div className="w-full bg-white py-10 px-4 flex flex-col items-center text-center shadow-sm">
+      <div className="w-full bg-white py-10 px-1 flex flex-col items-center text-center shadow-sm">
         <div className="w-full container mx-auto flex flex-col items-center">
           
           <p className="text-gray-900 font-bold text-base md:text-lg leading-relaxed max-w-6xl mb-8">

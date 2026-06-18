@@ -39,7 +39,7 @@ const ProductOfferSection = () => {
       <div className="relative w-full max-w-6xl mx-auto flex flex-col items-center overflow-hidden">
         
         {/* Product Image (contains all the text and design) */}
-        <div className="w-full border-2 border-[#0A3B22] p-4 rounded-md bg-white shadow-sm mb-8">
+        <div className="w-full border-2 border-[#0A3B22] p-1.5 rounded-md bg-white shadow-sm mb-8">
           <img 
             src={content.productImage} 
             alt="Product Offer" 
