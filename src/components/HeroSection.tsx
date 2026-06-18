@@ -42,16 +42,16 @@ const HeroSection = () => {
         )}
 
         {/* Main Title Box */}
-        <div className="w-full max-w-7xl px-1 md:px-6 mb-6">
-          <h1 className="text-[#e8dcc5] font-medium text-[32px] md:text-3xl lg:text-4xl leading-[1.4] tracking-wide whitespace-pre-wrap">
-            {content.title}
+        <div className="w-full max-w-7xl px-2 md:px-6 mb-6">
+          <h1 className="text-[#e8dcc5] font-medium text-[28px] md:text-3xl lg:text-4xl leading-[1.4] tracking-wide whitespace-pre-wrap">
+            {defaultHero.title}
           </h1>
         </div>
 
         {/* Subtitle Box */}
         <div className="w-[96%] max-w-6xl border border-[#bda528] rounded-xl px-2 py-4 md:p-6 mb-6 mx-auto">
-          <p className="text-[#e8dcc5] text-[20px] md:text-2xl lg:text-3xl leading-[1.5] whitespace-pre-wrap">
-            {content.subtitle}
+          <p className="text-[#e8dcc5] text-[20px] md:text-2xl lg:text-3xl leading-[1.6] whitespace-pre-wrap">
+            {defaultHero.subtitle}
           </p>
         </div>
 
