@@ -47,7 +47,7 @@ const BenefitsSection = () => {
       
       {/* Top Yellow Banner */}
       <div className="w-full bg-[#fbbc04] py-4 px-4 text-center border-b border-gray-300">
-        <h3 className="text-black font-bold text-xl md:text-2xl lg:text-3xl max-w-6xl mx-auto leading-relaxed">
+        <h3 className="text-black font-bold text-2xl md:text-2xl lg:text-3xl max-w-6xl mx-auto leading-relaxed">
           {content.bannerText}
         </h3>
       </div>
@@ -68,7 +68,7 @@ const BenefitsSection = () => {
               <div className="bg-[#12882c] rounded-sm p-0.5 mt-0.5 flex-shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
               </div>
-              <span className="text-gray-900 font-bold text-lg md:text-xl">{benefit}</span>
+              <span className="text-gray-900 font-bold text-xl md:text-xl">{benefit}</span>
             </div>
           ))}
         </div>
