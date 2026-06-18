@@ -7,8 +7,8 @@ const HeroSection = () => {
 
   const defaultHero = {
     topBadge: '/assets/pure-natural.png', 
-    title: 'পুরুষ এর হারানো যৌ-ব-ন ফিরিয়ে আনবে এই হালুয়া। দেশের লক্ষ লক্ষ মানুষ উপকৃত হচ্ছে',
-    subtitle: 'বী,র্য পাতলা, মাত্র ২-৩ মিনিটে বী,র্য বের হয়ে যায়? “অনেক ঔষধ খেয়েও উপকার হয়নি? তাদের জন্যই এই হালুয়া',
+    title: 'পুরুষ এর হারানো যৌ-ব-ন\nফিরিয়ে আনবে এই হালুয়া।\nদেশের লক্ষ লক্ষ মানুষ\nউপকৃত হচ্ছে',
+    subtitle: 'বী,র্য পাতলা, মাত্র ২-৩ মিনিটে বী,র্য বের\nহয়ে যায়? “অনেক ঔষধ খেয়েও উপকার\nহয়নি? তাদের জন্যই এই হালুয়া',
     buttonText: 'অর্ডার করুন',
     backgroundColor: '#0A3B22'
   };
@@ -42,21 +42,15 @@ const HeroSection = () => {
         )}
 
         {/* Main Title Box */}
-        <div className="w-full max-w-7xl px-4 md:px-6 mb-6">
-          <h1 
-            className="text-[#e8dcc5] font-medium text-[24px] sm:text-[28px] md:text-4xl leading-[1.4] tracking-wide text-justify"
-            style={{ textAlignLast: 'center' }}
-          >
+        <div className="w-full max-w-7xl px-0 md:px-6 mb-6">
+          <h1 className="text-[#e8dcc5] font-medium text-[32px] sm:text-[36px] md:text-4xl leading-[1.35] tracking-wide whitespace-pre-wrap">
             {defaultHero.title}
           </h1>
         </div>
 
         {/* Subtitle Box */}
-        <div className="w-[96%] max-w-6xl border border-[#bda528] rounded-xl px-4 py-4 md:p-6 mb-6 mx-auto">
-          <p 
-            className="text-[#e8dcc5] text-[18px] sm:text-[20px] md:text-2xl lg:text-3xl leading-[1.6] text-justify"
-            style={{ textAlignLast: 'center' }}
-          >
+        <div className="w-[96%] max-w-6xl border border-[#bda528] rounded-xl px-2 py-4 md:p-6 mb-6 mx-auto">
+          <p className="text-[#e8dcc5] text-[20px] md:text-2xl lg:text-3xl leading-[1.6] whitespace-pre-wrap">
             {defaultHero.subtitle}
           </p>
         </div>
