@@ -50,7 +50,7 @@ const UsageInstructionsSection = () => {
             <h2 className="text-white font-bold text-2xl md:text-3xl">{content.usageHeading}</h2>
           </div>
 
-          <div className="text-white font-bold text-lg md:text-xl leading-loose max-w-3xl space-y-6">
+          <div className="text-white font-bold text-xl md:text-xl leading-loose max-w-3xl space-y-6">
             <p>
               {parseHighlightedText(content.instruction1)}
             </p>
@@ -66,7 +66,7 @@ const UsageInstructionsSection = () => {
       <div className="w-full bg-white py-10 px-1 flex flex-col items-center text-center shadow-sm">
         <div className="w-full container mx-auto flex flex-col items-center">
           
-          <p className="text-gray-900 font-bold text-base md:text-lg leading-relaxed max-w-6xl mb-8">
+          <p className="text-gray-900 font-bold text-xl md:text-lg leading-relaxed max-w-6xl mb-8">
             {content.footerText}
           </p>
 
