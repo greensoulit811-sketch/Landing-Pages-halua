@@ -53,7 +53,7 @@ const ProductOfferSection = () => {
         {/* Order Button */}
         <a 
           href="#order-form" 
-          className="animate-pulse-scale bg-[#ff0000] hover:bg-[#cc0000] text-white font-bold text-lg md:text-xl px-12 py-4 rounded-md flex items-center justify-center gap-3 transition-colors shadow-lg border border-red-800 w-full max-w-sm"
+          className="animate-pulse-scale bg-[#ff0000] hover:bg-[#cc0000] text-white font-bold text-xl md:text-2xl px-12 py-4 rounded-md flex items-center justify-center gap-3 transition-colors shadow-lg border border-red-800 w-full max-w-sm"
         >
           <ShoppingCart className="w-6 h-6" />
           {heroButtonText}

@@ -103,9 +103,9 @@ const OrderFormSection = () => {
         {/* Top Headings */}
         <div className="w-full max-w-6xl text-center mb-6">
           <div className="bg-[#0A3B22] rounded-md py-3 px-4 shadow-sm mb-4">
-            <h2 className="text-[#fbbc04] font-bold text-xl md:text-2xl">{content.topHeading}</h2>
+            <h2 className="text-[#fbbc04] font-bold text-2xl md:text-3xl">{content.topHeading}</h2>
           </div>
-          <p className="text-gray-900 font-bold text-lg md:text-xl leading-relaxed">
+          <p className="text-gray-900 font-bold text-xl md:text-2xl leading-relaxed">
             {content.subHeadingLine1} 
             <span className="text-[#ff0000]">{content.subHeadingHighlight}</span>
             {content.subHeadingLine2}
@@ -115,7 +115,7 @@ const OrderFormSection = () => {
         {/* Form Container */}
         <div className="w-full border-[3px] border-[#0A3B22] rounded-md overflow-hidden bg-white shadow-sm">
           <div className="bg-[#0A3B22] text-white text-center py-3 px-4">
-            <h3 className="font-bold text-lg md:text-xl">{content.formHeading}</h3>
+            <h3 className="font-bold text-xl md:text-2xl">{content.formHeading}</h3>
           </div>
 
           <form onSubmit={handleSubmit} className="p-4 md:p-8">
@@ -126,7 +126,7 @@ const OrderFormSection = () => {
                 
                 {/* Your Products */}
                 <div>
-                  <h4 className="font-bold text-gray-700 mb-4 border-b border-gray-200 pb-2">Your Products</h4>
+                  <h4 className="font-bold text-gray-800 text-lg md:text-xl mb-4 border-b border-gray-200 pb-2">Your Products</h4>
                   <div className="bg-gray-50 border border-gray-200 rounded-sm p-4 flex items-center justify-between">
                     <div className="flex items-center gap-3">
                       <input type="checkbox" checked readOnly className="w-4 h-4 text-primary rounded border-gray-300" />
@@ -154,7 +154,7 @@ const OrderFormSection = () => {
 
                 {/* Billing Details */}
                 <div>
-                  <h4 className="font-bold text-gray-700 mb-4 border-b border-gray-200 pb-2">Billing details</h4>
+                  <h4 className="font-bold text-gray-800 text-lg md:text-xl mb-4 border-b border-gray-200 pb-2">Billing details</h4>
                   <div className="space-y-4">
                     <div>
                       <input 
@@ -196,7 +196,7 @@ const OrderFormSection = () => {
 
               {/* Right Column: Order Summary */}
               <div className="border border-gray-200 rounded-sm p-4 bg-gray-50 flex flex-col h-full">
-                <h4 className="font-bold text-gray-700 mb-4 border-b border-gray-200 pb-2">Your order</h4>
+                <h4 className="font-bold text-gray-800 text-lg md:text-xl mb-4 border-b border-gray-200 pb-2">Your order</h4>
                 
                 <div className="flex justify-between items-center text-sm font-bold text-gray-500 mb-4 px-2">
                   <span>Product</span>

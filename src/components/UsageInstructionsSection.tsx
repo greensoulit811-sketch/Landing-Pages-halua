@@ -47,10 +47,10 @@ const UsageInstructionsSection = () => {
         <div className="w-full max-w-6xl mx-auto flex flex-col items-center">
           
           <div className="border border-white py-3 px-8 rounded-sm mb-8 inline-block">
-            <h2 className="text-white font-bold text-xl md:text-3xl">{content.usageHeading}</h2>
+            <h2 className="text-white font-bold text-2xl md:text-3xl">{content.usageHeading}</h2>
           </div>
 
-          <div className="text-white font-bold text-base md:text-lg leading-loose max-w-3xl space-y-6">
+          <div className="text-white font-bold text-lg md:text-xl leading-loose max-w-3xl space-y-6">
             <p>
               {parseHighlightedText(content.instruction1)}
             </p>
@@ -66,12 +66,12 @@ const UsageInstructionsSection = () => {
       <div className="w-full bg-white py-10 px-4 flex flex-col items-center text-center shadow-sm">
         <div className="w-full container mx-auto flex flex-col items-center">
           
-          <p className="text-gray-900 font-bold text-sm md:text-base leading-relaxed max-w-6xl mb-8">
+          <p className="text-gray-900 font-bold text-base md:text-lg leading-relaxed max-w-6xl mb-8">
             {content.footerText}
           </p>
 
           <div className="bg-[#0A3B22] text-white py-3 px-8 rounded-sm mb-6 w-full max-w-6xl shadow-md">
-            <h3 className="font-bold text-lg md:text-xl">{content.contactHeading}</h3>
+            <h3 className="font-bold text-xl md:text-2xl">{content.contactHeading}</h3>
           </div>
 
           <a 

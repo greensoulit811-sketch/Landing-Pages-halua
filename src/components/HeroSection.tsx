@@ -7,7 +7,7 @@ const HeroSection = () => {
 
   const defaultHero = {
     topBadge: '/assets/pure-natural.png', 
-    title: 'পুরুষ এর হারানো যৌ-ব-ন\nফিরিয়ে আনবে এই হালুয়া।\nদেশের লক্ষ লক্ষ মানুষ উপকৃত হচ্ছে',
+    title: 'পুরুষ এর হারানো যৌ-ব-ন ফিরিয়ে\nআনবে এই হালুয়া। দেশের লক্ষ লক্ষ\nমানুষ উপকৃত হচ্ছে',
     subtitle: 'বী,র্য পাতলা, মাত্র ২-৩ মিনিটে বী,র্য বের\nহয়ে যায়? “অনেক ঔষধ খেয়েও উপকার\nহয়নি? তাদের জন্যই এই হালুয়া',
     buttonText: 'অর্ডার করুন',
     backgroundColor: '#0A3B22'
@@ -50,7 +50,7 @@ const HeroSection = () => {
 
         {/* Subtitle Box */}
         <div className="w-[96%] max-w-6xl border border-[#bda528] rounded-xl px-2 py-4 md:p-6 mb-6 mx-auto">
-          <p className="text-[#e8dcc5] text-[20px] md:text-2xl lg:text-3xl leading-[1.6] whitespace-pre-wrap">
+          <p className="text-[#e8dcc5] text-[22px] md:text-3xl leading-[1.6] whitespace-pre-wrap">
             {defaultHero.subtitle}
           </p>
         </div>
@@ -58,7 +58,7 @@ const HeroSection = () => {
         {/* Order Button */}
         <a 
           href="#order-form" 
-          className="animate-pulse-scale bg-[#ff0000] hover:bg-[#cc0000] text-white font-bold text-lg md:text-xl px-8 py-3 rounded-md flex items-center justify-center gap-3 transition-colors shadow-lg border border-red-800"
+          className="animate-pulse-scale bg-[#ff0000] hover:bg-[#cc0000] text-white font-bold text-xl md:text-2xl px-10 py-4 rounded-md flex items-center justify-center gap-3 transition-colors shadow-lg border border-red-800"
         >
           <ShoppingCart className="w-6 h-6" />
           {content.buttonText}
