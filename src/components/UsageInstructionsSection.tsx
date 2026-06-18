@@ -70,7 +70,7 @@ const UsageInstructionsSection = () => {
             {content.footerText}
           </p>
 
-          <div className="bg-[#0A3B22] text-white py-3 px-8 rounded-sm mb-6 w-full max-w-6xl shadow-md">
+          <div className="bg-[#0A3B22] text-white py-3 px-4 rounded-sm mb-6 w-full max-w-6xl shadow-md">
             <h3 className="font-bold text-xl md:text-2xl">{content.contactHeading}</h3>
           </div>
 
