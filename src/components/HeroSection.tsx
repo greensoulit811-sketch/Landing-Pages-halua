@@ -6,9 +6,9 @@ const HeroSection = () => {
   const { data: heroContent } = usePageContent('hero-section');
 
   const defaultHero = {
-    topBadge: '/assets/pure-natural.png', // We will assume there's a placeholder or they upload one
-    title: 'পুরুষ এর হারানো যৌ-ব-ন ফিরিয়ে আনবে এই হালুয়া। দেশের লক্ষ লক্ষ মানুষ উপকৃত হচ্ছে',
-    subtitle: 'বী,র্য পাতলা, মাত্র ২-৩ মিনিটে বী,র্য বের হয়ে যায়? “অনেক ঔষধ খেয়েও উপকার হয়নি? তাদের জন্যই এই হালুয়া',
+    topBadge: '/assets/pure-natural.png', 
+    title: 'পুরুষ এর হারানো যৌ-\nব-ন ফিরিয়ে আনবে\nএই হালুয়া। দেশের\nলক্ষ লক্ষ মানুষ\nউপকৃত হচ্ছে',
+    subtitle: 'বী,র্য পাতলা, মাত্র ২-৩\nমিনিটে বী,র্য বের হয়ে\nযায়? “অনেক ঔষধ\nখেয়েও উপকার হয়নি?\nতাদের জন্যই এই হালুয়া',
     buttonText: 'অর্ডার করুন',
     backgroundColor: '#0A3B22'
   };
@@ -24,7 +24,7 @@ const HeroSection = () => {
 
   return (
     <section 
-      className="relative w-full min-h-[400px] flex flex-col items-center justify-center pt-10 pb-20 md:pt-16 md:pb-28 overflow-hidden"
+      className="relative w-full min-h-[400px] flex flex-col items-center justify-center pt-8 pb-20 md:pt-16 md:pb-28 overflow-hidden"
       style={{ backgroundColor: content.backgroundColor || '#0A3B22' }}
     >
       <div className="container mx-auto px-4 z-10 flex flex-col items-center text-center">
@@ -42,16 +42,18 @@ const HeroSection = () => {
         )}
 
         {/* Main Title Box */}
-        <div className="w-full max-w-6xl border border-white rounded-md p-4 md:p-6 mb-6">
-          <h1 className="text-white font-bold text-lg md:text-2xl lg:text-3xl leading-snug tracking-wide">
+        <div className="w-full max-w-7xl px-3 md:px-6 mb-6">
+          <h1 className="text-[#e8dcc5] font-medium text-[24px] md:text-3xl lg:text-4xl leading-[1.4] tracking-wide whitespace-pre-wrap">
             {content.title}
           </h1>
         </div>
 
-        {/* Subtitle */}
-        <p className="text-[#e9dc01] font-bold text-sm md:text-lg lg:text-xl max-w-4xl mb-8 leading-relaxed px-4">
-          {content.subtitle}
-        </p>
+        {/* Subtitle Box */}
+        <div className="w-[98%] max-w-6xl border border-[#bda528] rounded-xl px-2 py-3 md:p-6 mb-6 mx-auto">
+          <p className="text-[#e8dcc5] text-[19px] md:text-2xl lg:text-3xl leading-[1.6] whitespace-pre-wrap">
+            {content.subtitle}
+          </p>
+        </div>
 
         {/* Order Button */}
         <a 
