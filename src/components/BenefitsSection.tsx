@@ -68,7 +68,7 @@ const BenefitsSection = () => {
               <div className="bg-[#12882c] rounded-sm p-0.5 mt-0.5 flex-shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
               </div>
-              <span className="text-gray-900 font-bold text-xl md:text-xl">{benefit}</span>
+              <span className="text-gray-900 font-bold text-2xl md:text-xl">{benefit}</span>
             </div>
           ))}
         </div>
