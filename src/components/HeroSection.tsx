@@ -42,7 +42,7 @@ const HeroSection = () => {
         )}
 
         {/* Main Title Box */}
-        <div className="w-full max-w-7xl px-2 md:px-6 mb-6">
+        <div className="w-full max-w-7xl -px-2 md:px-6 mb-6">
           <h1 className="text-[#e8dcc5] font-medium text-[28px] md:text-3xl lg:text-4xl leading-[1.4] tracking-wide whitespace-pre-wrap">
             {defaultHero.title}
           </h1>
