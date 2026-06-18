@@ -16,7 +16,7 @@ const OrderFormSection = () => {
     subHeadingHighlight: "৩০ মি.লি. ম্যাসেজ অয়েল সম্পূর্ণ ফ্রি!",
     subHeadingLine2: " স্টক সীমিত — অফার শেষ হওয়ার আগেই অর্ডার করে নিন।",
     formHeading: "হালুয়া নেয়ার জন্য, নিচের ফর্মটি সম্পূর্ণ পূরণ করুন",
-    productTitle: "হালুয়া মোহাব্বত",
+    productTitle: "লাভ ফর এভার হালুয়া",
     productPrice: 1200,
     productThumbnail: "/placeholder.svg"
   };

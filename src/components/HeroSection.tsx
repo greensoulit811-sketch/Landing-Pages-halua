@@ -50,7 +50,7 @@ const HeroSection = () => {
 
         {/* Subtitle Box */}
         <div className="w-[96%] max-w-6xl border border-[#bda528] rounded-xl px-2 py-4 md:p-6 mb-6 mx-auto">
-          <p className="text-[#e8dcc5] text-[22px] md:text-3xl leading-[1.6] whitespace-pre-wrap">
+          <p className="text-[#fbbc04] text-[22px] md:text-3xl leading-[1.6] whitespace-pre-wrap">
             {defaultHero.subtitle}
           </p>
         </div>
